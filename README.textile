@@ -1,0 +1,19 @@
+h1. Parrot
+
+h2. Build
+
+h3. Standard
+
+This project heavily relies on C++11 standard.
+In order to build this project you should enable c++11 in your compiler by adding appropriate compiler option to CMAKE_CXX_FLAGS.
+
+i.e.:
+* CMAKE_CXX_FLAGS:STRING="-std=gnu++0x"
+
+h3. CMake variables
+
+This project uses "Intel Thread Building Blocks":http://threadingbuildingblocks.org/.
+In order to build this project the following variables should be set in CMakeCache.txt file:
+* *tbb_include_dir*:FILEPATH
+* *tbb_lib_dir*:FILEPATH
+* *tbb_lib_name*:STRING

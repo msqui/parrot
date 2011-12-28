@@ -1,0 +1,30 @@
+syntax:glob
+
+# Build artifacts
+[b|B]uild
+[d|D]ebug
+[r|R]elease
+
+*.o
+*.a
+
+# temp files
+tmp
+.DS_Store
+*.tmp
+*~
+
+# Service info
+gmon.out
+prof_report.txt
+
+# Eclipse
+.cproject
+.project
+.settings
+
+# SCons build system
+.sconsign*
+
+# CMake
+cmake/
